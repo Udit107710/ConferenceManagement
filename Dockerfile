@@ -12,5 +12,6 @@ RUN useradd demo
 USER demo
 
 EXPOSE 8080
+ENV FLASK_APP app
 
-ENTRYPOINT ["bash", "/app/bin/run.sh"]
+ENTRYPOINT ["bash", "flask run app"]

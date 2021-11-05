@@ -53,7 +53,7 @@ class Talk(Model):
     id = db.Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
     title = db.Column(db.String(80), nullable=False)
     description = db.Column(db.Text, nullable=True)
-    duration = db.Column(db.Integer, nullable=True)
+    duration = db.Column(db.Integer, nullable=True) # In minutes
     start = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
     conference_id = db.Column(UUID(as_uuid=True), db.ForeignKey('conference.id'), nullable=False)
 

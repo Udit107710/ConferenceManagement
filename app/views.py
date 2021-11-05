@@ -42,6 +42,7 @@ class Conference(ModelRestApi):
     exclude_route_methods = ("delete")
     base_order = ('title', 'desc')
 
+
 class TalkParticipantAPI(BaseApi):
 
     resource_name = 'talk'

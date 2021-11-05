@@ -1,14 +1,14 @@
-services: "3.7"
+version: "3"
 
 services:
-  app:
-    dockerfile: .
   db:
-    image: "postgres:14.0"
+    image: postgres:14.0
     env_file:
       - .env
     volumes:
-      - database_data: /var/lib/postgresql/data
+      - dbdata:/var/lib/postgresql/data
+  app:
+    build: .
 
 volumes:
-  database-data:
+  dbdata:
