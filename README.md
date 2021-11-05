@@ -15,8 +15,7 @@ POSTGRES_DB=db
 ```
 
 ### Create models
-Enable (create)[https://github.com/Udit107710/ConferenceManagement/blob/0d73a0970e3a7da5f0ff7ce849e8a4c431c3098e/app/views.py#L98] for db models to be created in a new db
-
+Enable [create](app/views.py#L98) for db models to be created in a new db
 
 ### Docker Compose
 ```
