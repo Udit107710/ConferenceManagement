@@ -14,14 +14,21 @@ POSTGRES_PASSWORD=password
 POSTGRES_DB=db
 ```
 
+### Create models
+Enable (create)[app/views.py#98] for db models to be created in a new db
+
+
+### Docker Compose
+```
+docker-compose up
+```
+
 ### Create admin user
-Use below command to create an admin user
+After the constainer is up. Run below command inside the container
 ```
 flask fab create-admin
 ```
 
-### Create models
-Enable (create)[app/views.py#98] for db models to be created in a new db
 
 ### Run app
 ```
