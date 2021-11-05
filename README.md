@@ -28,14 +28,8 @@ After the constainer is up. Run below command inside the container
 flask fab create-admin
 ```
 
-
-### Run app
-```
-flask run app
-```
-
 ### Authenticate
-Use your admin user to obtain token in response and use that token for making all the requests.
+Use your admin user to obtain token in response and use that token for making all the requests. Check Postman Collection for help.
 
 ## Improvements:
 - Projection based GET on nested data
